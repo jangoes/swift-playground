@@ -101,6 +101,7 @@ let photosResource = PhotosResource()
 let request: APIClient<PhotosResource> = APIClient(using: photosResource)
 
 request.run()
+    .receive(on: DispatchQueue.main)
     .sink { completion in
         switch completion {
         case .finished:
