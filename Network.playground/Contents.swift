@@ -100,7 +100,7 @@ class APIClient<Resource: APIResource> {
 let photosResource = PhotosResource()
 let request: APIClient<PhotosResource> = APIClient(using: photosResource)
 
-request.run()
+let test = request.run()
     .receive(on: DispatchQueue.main)
     .sink { completion in
         switch completion {
@@ -112,4 +112,3 @@ request.run()
     } receiveValue: { data in
         print(data)
     }
-
