@@ -1,3 +1,3 @@
 # swift-playground
 
-### Swift playground testing for future integration
+### Swift playground tests for future integration
